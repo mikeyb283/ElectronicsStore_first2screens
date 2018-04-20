@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidapp.java.currency.electronicsstore.ProductSelectionActivity">
+
+    <TextView
+        android:id="@+id/page2header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/page_two_header"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tabletIcon"
+        android:layout_width="87dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/tablet_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page2header"
+        app:srcCompat="@drawable/tablet" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="60dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/phone_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabletIcon"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tabletTxt"
+        android:layout_width="104dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/tabletTag"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/tabletSpinner"
+        app:layout_constraintStart_toEndOf="@+id/tabletIcon"
+        app:layout_constraintTop_toBottomOf="@+id/page2header" />
+
+    <TextView
+        android:id="@+id/phoneTxt"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/phonePrice"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toStartOf="@+id/phoneSpinner"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tabletTxt"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Spinner
+        android:id="@+id/tabletSpinner"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="64dp"
+        android:background="#fcb3b3"
+        android:entries="@array/Quantity"
+        android:isScrollContainer="false"
+        android:outlineProvider="background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page2header" />
+
+    <Spinner
+        android:id="@+id/phoneSpinner"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="80dp"
+        android:background="#fcb3b3"
+        android:backgroundTint="#fcb3b3"
+        android:entries="@array/Quantity"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabletSpinner"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/button_hint"
+        app:layout_constraintBottom_toTopOf="@+id/arrowIcon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrowIcon2"
+        android:layout_width="210dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/image_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/tabQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/qty"
+        app:layout_constraintBottom_toTopOf="@+id/tabletSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/qty"
+        app:layout_constraintBottom_toTopOf="@+id/phoneSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

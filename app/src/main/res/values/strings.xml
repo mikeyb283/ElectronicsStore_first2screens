@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Electronics Store</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="button_hint">Next</string>
+    <string name="image_hint">arrow icon</string>
+    <string name="tablet_description">tablet icon</string>
+    <string name="phone_description">phone icon</string>
+
+    <string name="errMessageLogin">Invalid Login.  Please retry.</string>
+    <string name="errMessagePassword">Invalid Password. Please retry.</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+
+    <string name="page_two_header">Make a selection</string>
+    <string name="tabletTag">Android Tablet $599</string>
+    <string name="phonePrice">Android Phone $199</string>
+    <string name="qty">Qty</string>
+
+    <string-array name="Quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>
